@@ -1,0 +1,11 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+div.page img{
+  width: 100%;
+}
+div.page#coverpage{
+  background-color: #de4243;
+}
