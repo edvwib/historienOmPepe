@@ -3,10 +3,37 @@
   margin: 0;
   padding: 0;
 }
+div.page{
+  position: relative;
+}
 div.page img{
+  z-index: 1;
   display: block; /*Removes white border between images*/
   width: 100%;
 }
 div.page#coverpage{
   background-color: #de4243;
+}
+
+
+
+/*Page2 livingroom*/
+div > #gungstol{ /*Positioning/Animation*/
+  display: inline;
+  z-index: 2;
+  width: 17%;
+  position: absolute;
+  left: 26%;
+  top: 27%;
+
+  animation-name: rocking;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  transform-origin: 48% 100%; /*Set fixed position on the bottom for the rotate*/
+  animation-direction: alternate;
+}
+@keyframes rocking{ /*Animation*/
+  from {transform: rotate(-2deg);}
+  to {transform: rotate(9deg);}
 }
