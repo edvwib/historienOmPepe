@@ -37,3 +37,36 @@ div > #gungstol{ /*Positioning/Animation*/
   from {transform: rotate(-2deg);}
   to {transform: rotate(9deg);}
 }
+
+div > #pendel{ /*Positioning/Animation*/
+  display: inline;
+  z-index: 2;
+  width: 1%;
+  position: absolute;
+  left: 90.3%;
+  top: 43.5%;
+
+  animation-name: pendel;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  transform-origin: 48% 0%; /*Set fixed position on the bottom for the rotate*/
+  animation-direction: alternate;
+}
+@keyframes pendel{ /*Animation*/
+  from {transform: rotate(-7deg);}
+  to {transform: rotate(3deg);}
+}
+
+div > #flame{ /*Positioning/Animation*/
+  display: inline;
+  z-index: 2;
+  width: 3%;
+  position: absolute;
+  left: 60.5%;
+  top: 32%;
+
+}
+@keyframes flame{ /*Animation*/
+
+}
