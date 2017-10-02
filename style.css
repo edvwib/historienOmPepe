@@ -70,3 +70,27 @@ div > #flame{ /*Positioning/Animation*/
 @keyframes flame{ /*Animation*/
 
 }
+
+
+/*Page6 upper stairs*/
+div > #fish{ /*Positioning/Animation*/
+  display: inline;
+  z-index: 2;
+  width: 4%;
+  position: absolute;
+  left: 82%;
+  top: 63%;
+
+  animation-name: fish;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes fish{ /*Animation*/
+  0% {;}
+  20% {transform: rotateY(-90deg); left: 78%;}
+  40% {transform: rotateY(-180deg); left: 84%;}
+  60% {transform: rotateY(180deg; left: 86%;}
+  80% {left: 83%;}
+  100% {transform: rotateY(-180deg; left: 82%;}
+}
