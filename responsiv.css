@@ -6,6 +6,11 @@ div.page img {
   z-index: 1;
 }
 
+div.page#coverpage img{
+  height: 100vh;
+  width: auto;
+}
+
 @media only screen and (orientation: portrait) {
   body {
     background-color: blue;
