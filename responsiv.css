@@ -2,13 +2,27 @@ body {
   background-color: #de4243;
 }
 
+div.page img {
+  z-index: 1;
+}
+
 @media only screen and (orientation: portrait) {
   body {
     background-color: blue;
+  }
+
+  div.page {
+    display: inline;
   }
 }
 
 
 @media only screen and (orientation: landscape) {
-
+  div.page{
+    position: relative;
+  }
+  div.page img{
+    display: block;
+    width: 100%;
+  }
 }

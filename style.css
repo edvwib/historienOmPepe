@@ -3,17 +3,6 @@
   margin: 0;
   padding: 0;
 }
-div.page{
-  position: relative;
-}
-div.page img{
-  z-index: 1;
-  display: block; /*Removes white border between images*/
-  width: 100%;
-}
-div.page#coverpage{
-  background-color: #de4243;
-}
 
 
 
