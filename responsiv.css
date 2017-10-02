@@ -1,0 +1,14 @@
+body {
+  background-color: #de4243;
+}
+
+@media only screen and (orientation: portrait) {
+  body {
+    background-color: blue;
+  }
+}
+
+
+@media only screen and (orientation: landscape) {
+
+}
