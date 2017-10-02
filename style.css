@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+<<<<<<< HEAD
 div.page{
   position: relative;
 }
@@ -14,6 +15,8 @@ div.page .pageimg{
 div.page#coverpage{
   background-color: #de4243;
 }
+=======
+>>>>>>> 0223466b663f320309b8452f2ddb8f651f6b6ce0
 
 
 
