@@ -29,7 +29,7 @@ div > #gungstol{ /*Positioning/Animation*/
   top: 27%;
 
   animation-name: rocking;
-  animation-duration: 2s;
+  animation-duration: 2.5s;
   animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
   animation-iteration-count: infinite;
   transform-origin: 48% 100%; /*Set fixed position on the bottom for the rotate*/
