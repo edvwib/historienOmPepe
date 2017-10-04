@@ -19,6 +19,11 @@ div.page#coverpage{
   background-color: #de4243;
 }
 
+div.page#coverpage img{
+  display: block;
+  margin: 0 auto;
+}
+
 /*Page2 livingroom*/
 div > #gungstol{ /*Positioning/Animation*/
   display: inline;
