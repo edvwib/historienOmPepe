@@ -23,8 +23,9 @@ div.page#coverpage img{
     display: inline-block;
   }
 
-  div.page {
-    height: 100vhs;
+  div.page img{
+    height: 100vh;
+    width: auto;
   }
 }
 
