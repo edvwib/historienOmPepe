@@ -23,7 +23,7 @@ div.page#coverpage img{
     display: inline-block;
   }
 
-  div.page img{
+  div.page .pageimg{
     height: 100vh;
     width: auto;
   }
