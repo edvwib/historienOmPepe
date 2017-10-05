@@ -14,7 +14,6 @@ div.page#coverpage img{
 @media only screen and (orientation: portrait) {
   body {
     position: relative;
-    background-color: blue;
     width: 37012px;
     height: 100vh;
   }
