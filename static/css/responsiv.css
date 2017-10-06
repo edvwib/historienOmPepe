@@ -12,7 +12,37 @@ div.page#coverpage img{
   width: auto;
 }
 
-@media only screen and (orientation: portrait) {
+@media screen and (max-width: 640px){
+  body {
+    position: relative;
+    width: 37012px;
+  }
+
+  div.page {
+    display: inline-block;
+  }
+
+  div.page .pageimg{
+    height: 100vh;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px){
+
+}
+
+@media screen and (max-width: 1920px){
+  div.page{
+    position: relative;
+  }
+  div.page img{
+    display: block;
+    width: 100%;
+  }
+}
+
+/*@media only screen and (orientation: portrait) {
   body {
     position: relative;
     width: 37012px;
@@ -37,4 +67,4 @@ div.page#coverpage img{
     display: block;
     width: 100%;
   }
-}
+}*/
