@@ -16,7 +16,8 @@ div.page{
 div.page .pageimg{
   z-index: 10;
   display: block; /*Removes white border between images*/
-  width: 100%;
+  width: 80%;
+  margin: auto;
 }
 
 div.page#page0{
