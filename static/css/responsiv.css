@@ -7,7 +7,7 @@ div.page img {
   z-index: 1;
 }
 
-div.page#coverpage img{
+div.page#page0 img{
   height: 100vh;
   width: auto;
 }

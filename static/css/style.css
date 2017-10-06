@@ -19,11 +19,11 @@ div.page .pageimg{
   width: 100%;
 }
 
-div.page#coverpage{
+div.page#page0{
   background-color: #de4243;
 }
 
-div.page#coverpage img{
+div.page#page0 img{
   display: block;
   margin: 0 auto;
 }
