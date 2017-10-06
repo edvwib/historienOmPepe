@@ -3,10 +3,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
+/*body{overflow: hidden;}*/
 
 div.page{
   position: relative;
+  height: 100vh;
+  background-color: #de4243;
 }
 
 div.page .pageimg{
@@ -23,6 +27,18 @@ div.page#coverpage img{
   display: block;
   margin: 0 auto;
 }
+
+/*Textboxes*/
+p.story{
+  position: absolute;
+  z-index: 30;
+  padding: 10px;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 10px;
+}
+
 
 /*Page2 livingroom*/
 div > #gungstol{ /*Positioning/Animation*/
