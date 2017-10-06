@@ -1,0 +1,60 @@
+#firstNext{
+  animation: startbutton alternate infinite 1.5s linear;
+  animation-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+@keyframes startbutton{
+  from {transform: scale(1);background-color: rgba(0, 0, 0, 0.1);}
+  to {transform: scale(0.8);background-color: rgba(0, 0, 0, 0.3);}
+}
+
+div > #gungstol{
+  animation-name: rocking;
+  animation-duration: 2.5s;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+  animation-iteration-count: infinite;
+  transform-origin: 48% 100%; /*Set fixed position on the bottom for the rotate*/
+  animation-direction: alternate;
+}
+@keyframes rocking{ /*Animation*/
+  from {transform: rotate(-2deg);}
+  to {transform: rotate(9deg);}
+}
+
+div > #pendel{
+  animation-name: pendel;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  transform-origin: 48% 0%; /*Set fixed position on the bottom for the rotate*/
+  animation-direction: alternate;
+}
+@keyframes pendel{ /*Animation*/
+  from {transform: rotate(-7deg);}
+  to {transform: rotate(3deg);}
+}
+
+div > #fish{
+  animation-name: fish;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes fish{ /*Animation*/
+  0% {;}
+  20% {transform: rotateY(-90deg); left: 78%;}
+  40% {transform: rotateY(-180deg); left: 84%;}
+  60% {transform: rotateY(180deg); left: 86%;}
+  80% {left: 83%;}
+  100% {transform: rotateY(-180deg); left: 82%;}
+}
+
+div > #mouse{
+  animation-name: mouse;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+@keyframes mouse{ /*Animation*/
+  from {;}
+  to {;}
+}
