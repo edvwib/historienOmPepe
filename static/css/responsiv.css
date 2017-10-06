@@ -12,7 +12,7 @@ div.page#coverpage img{
   width: auto;
 }
 
-@media screen and (max-width: 640px){
+@media screen and (min-width: 640px){
   body {
     position: relative;
     width: 37012px;
