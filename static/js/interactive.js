@@ -6,11 +6,13 @@ $(document).ready(function(){
   $(function () {
     $(document).keydown(function (evt) {
       var k = evt.keyCode;
-      evt.preventDefault();
+
       if(k === 40 || k === 83 || k === 34 || k === 32){ //Down arrow key, s, pagedown or spacebar
+        evt.preventDefault();
         scrollDown();
       }
       if(k === 38 || k === 87 || k === 33){ //Up arrow key, w or pageup
+        evt.preventDefault();
         scrollUp();
       }
     });
