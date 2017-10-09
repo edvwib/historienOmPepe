@@ -21,14 +21,15 @@ $(document).ready(function(){
   //Scroll with mousewheel
   $(window).bind('mousewheel', function(event) {
     event.preventDefault();
-    if (event.originalEvent.wheelDelta >= 0) { //Scroll up
-      console.log('Scroll up');
+    if (event.originalEvent.wheelDelta >= 120) { //Scroll up
+      console.log(event.originalEvent.wheelDelta);
       scrollUp();
     }
-    else { //Scroll down
-      console.log('Scroll down');
+    else if(event.originalEvent.wheelDelta <= -120){ //Scroll down
+      console.log(event.originalEvent.wheelDelta);
       scrollDown();
     }
+    await sleep(2000);
   });
 
 
@@ -54,6 +55,10 @@ $(document).ready(function(){
     }else {
       $('html,body').animate({ scrollTop:$('#page' + i).offset().top}, 2000);
     }
+  }
+
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
   }
 
 });
