@@ -21,12 +21,11 @@ $(document).ready(function(){
   //Scroll with mousewheel
   $(window).bind('mousewheel', function(event) {
     event.preventDefault();
-    if (event.originalEvent.wheelDelta >= 0) { //Scroll up
-      console.log('Scroll up');
+    var delta = event.originalEvent.wheelDelta;
+    if (delta >= 0) { //Scroll up
       scrollUp();
     }
     else { //Scroll down
-      console.log('Scroll down');
       scrollDown();
     }
   });
