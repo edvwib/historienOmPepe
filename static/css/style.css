@@ -45,29 +45,29 @@ p.story{
 div > #gungstol{ /*Positioning/Animation*/
   display: inline;
   z-index: 20;
-  width: 17%;
+  width: 15%;
   position: absolute;
-  left: 26%;
-  top: 27%;
+  left: 31%;
+  top: 26%;
 }
 
 div > #pendel{ /*Positioning/Animation*/
   display: inline;
   z-index: 20;
-  width: 1%;
+  width: 0.9%;
   position: absolute;
-  left: 90.3%;
-  top: 43.5%;
+  left: 82.2%;
+  top: 45.2%;
 }
 
 /*Page6 upper stairs*/
 div > #fish{ /*Positioning/Animation*/
   display: inline;
   z-index: 20;
-  width: 4%;
+  width: 3.7%;
   position: absolute;
-  left: 82%;
-  top: 63%;
+  left: 77%;
+  top: 66.5%;
 }
 
 /*Page9 closeup */
