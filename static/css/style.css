@@ -64,10 +64,10 @@ div > #pendel{ /*Positioning/Animation*/
 div > #fish{ /*Positioning/Animation*/
   display: inline;
   z-index: 20;
-  width: 4%;
+  width: 3.7%;
   position: absolute;
-  left: 82%;
-  top: 63%;
+  left: 77%;
+  top: 66.5%;
 }
 
 /*Page9 closeup */
