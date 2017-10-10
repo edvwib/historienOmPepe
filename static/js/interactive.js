@@ -25,8 +25,7 @@ $(document).ready(function(){
     var delta = event.originalEvent.wheelDelta;
     if (delta >= 120) { //Scroll up
       scrollUp();
-    }
-    else if(delta <= -120){ //Scroll down
+    }else if(delta <= -120){ //Scroll down
       scrollDown();
     }
   });
@@ -40,16 +39,16 @@ $(document).ready(function(){
 
 
   function scrollUp(){
-    i--;
-    if (i < 0) {
+    i--; //Update current location
+    if (i < 0) { //If first page = do no scroll up
       i = 0;
     }else {
       $('html,body').animate({ scrollTop:$('#page' + i).offset().top}, 2000);
     }
   }
   function scrollDown(){
-    i++;
-    if (i > 13) {
+    i++; //Update current location
+    if (i > 13) { //If last page = do no scroll down
       i = 13;
     }else {
       $('html,body').animate({ scrollTop:$('#page' + i).offset().top}, 2000);
