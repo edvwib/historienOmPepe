@@ -5,23 +5,20 @@ $(document).ready(function(){
   oldURLLoc = window.location.href.split("#page").pop(); //Save old location on page from URL
   baseURL = window.location.href.substring(0, window.location.href.indexOf( "#" )); //Save base URL (remove #page if existing)
   var tmpLastChar = oldURLLoc.charAt(oldURLLoc.length-1); //Check if last page was default/not set
-  if (tmpLastChar == 'l' || tmpLastChar == '/' ) {
+  if (tmpLastChar == 'l' || tmpLastChar == '/' ) {//If opened first time, set i to top page
     var currentPage = -1;
     scrollDown(0);
   }else if(currentPage === 0 || currentPage === 13) {//Do not scroll to active page if user is at start/end
 
-  }else {
+  }else {//Scroll instantly to the page the user was on
     var currentPage = oldURLLoc - 1;
     scrollDown(0);
   }
-
-
 
   $(window).bind('hashchange', function() {//Update currentPage if user manually change URL
      oldURLLoc = window.location.href.split("#page").pop(); //Get last part of URL
      currentPage = oldURLLoc;
    });
-
 
   //Scrolling with keyboard
   $(function () {
@@ -42,8 +39,6 @@ $(document).ready(function(){
     });
   });
 
-
-
   //Scroll with mousewheel
   $(window).bind('mousewheel', function(event) {
     event.preventDefault();
@@ -58,13 +53,6 @@ $(document).ready(function(){
       time = d.getTime();
     }
   });
-
-
-
-
-
-
-
 
 
   function scrollUp(speed){
