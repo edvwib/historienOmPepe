@@ -2,23 +2,21 @@ $(document).ready(function(){
   //alert("Document ready!");
   var d = new Date();
   var time = 0;
-  oldURLLoc = window.location.href.split("#page").pop();
-  baseURL = window.location.href.substring(0, window.location.href.indexOf( "#" ));
-  var currentPage = null;
+  oldURLLoc = window.location.href.split("#page").pop(); //Save old location on page from URL
+  baseURL = window.location.href.substring(0, window.location.href.indexOf( "#" )); //Save base URL (remove #page if existing)
   if (oldURLLoc.charAt(oldURLLoc.length-1) == 'l') {
-    currentPage = -1;
+    var currentPage = -1;
     scrollDown(0);
   }else if(currentPage === 0 || currentPage === 13) {//Do not scroll to active page if user is at start/end
 
   }else {
-    currentPage = oldURLLoc; //Used for keeping track of user position on page
-    currentPage--;
+    var currentPage = oldURLLoc -1;
     scrollDown(0);
   }
 
 
   $(window).bind('hashchange', function() {//Update currentPage if user manually change URL
-     oldURLLoc = window.location.href.split("#page").pop();
+     oldURLLoc = window.location.href.split("#page").pop(); //Get last part of URL
      currentPage = oldURLLoc;
    });
 
@@ -49,7 +47,7 @@ $(document).ready(function(){
     event.preventDefault();
     var delta = event.originalEvent.wheelDelta;
     d = new Date();
-    if (d.getTime() >= time+2000) {
+    if (d.getTime() >= time+2000) {//Check if 2s passed since last scroll
       if (delta > 0) { //Scroll up
         scrollUp(2000);
       }else if(delta < 0){ //Scroll down
