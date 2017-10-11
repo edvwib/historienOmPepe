@@ -4,15 +4,17 @@ $(document).ready(function(){
   var time = 0;
   oldURLLoc = window.location.href.split("#page").pop(); //Save old location on page from URL
   baseURL = window.location.href.substring(0, window.location.href.indexOf( "#" )); //Save base URL (remove #page if existing)
-  if (oldURLLoc.charAt(oldURLLoc.length-1) == 'l') {
+  var tmpLastChar = oldURLLoc.charAt(oldURLLoc.length-1); //Check if last page was default/not set
+  if (tmpLastChar == 'l' || tmpLastChar == '/' ) {
     var currentPage = -1;
     scrollDown(0);
   }else if(currentPage === 0 || currentPage === 13) {//Do not scroll to active page if user is at start/end
 
   }else {
-    var currentPage = oldURLLoc -1;
+    var currentPage = oldURLLoc - 1;
     scrollDown(0);
   }
+
 
 
   $(window).bind('hashchange', function() {//Update currentPage if user manually change URL
