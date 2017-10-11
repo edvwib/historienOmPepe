@@ -23,10 +23,14 @@ div.page .pageimg{
 div.page#page0{
   background-color: #de4243;
 }
-
 div.page#page0 img{
   display: block;
   margin: 0 auto;
+}
+div.page#page0 #authors{
+  position: absolute;
+  top: 4%;
+  left: 36%;
 }
 
 /*Textboxes*/
@@ -67,15 +71,5 @@ div > #fish{ /*Positioning/Animation*/
   width: 3.7%;
   position: absolute;
   left: 77%;
-  top: 66.5%;
-}
-
-/*Page9 closeup */
-div > #mouse{
-  display: inline;
-  z-index: 7;
-  width: 15%;
-  position: absolute;
-  left: 35%;
   top: 66.5%;
 }

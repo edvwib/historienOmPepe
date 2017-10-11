@@ -63,14 +63,3 @@ div > #fish{
   100% {transform: rotateY(-180deg); left: 82%;}
   */
 }
-
-div > #mouse{
-  animation-name: mouse;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: 1;
-}
-@keyframes mouse{ /*Animation*/
-  from {;}
-  to {;}
-}
