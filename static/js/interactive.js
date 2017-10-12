@@ -21,7 +21,6 @@ $(document).ready(function(){
    });
 
   //Scrolling with keyboard
-  $(function () {
     $(document).keydown(function (evt) {
       var k = evt.keyCode;
       d = new Date();
@@ -37,7 +36,6 @@ $(document).ready(function(){
         time = d.getTime();
       }
     });
-  });
 
   //Scroll with mousewheel
   $(window).bind('mousewheel', function(event) {
