@@ -137,6 +137,7 @@ p.story{ /*General values, other values specific to textbox under id below*/
   #p13_1{
     left: 20%;
     top: 90%;
+    width: auto;
   }
   #p13_2{
     left: 53.5%;
