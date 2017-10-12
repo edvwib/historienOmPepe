@@ -37,7 +37,6 @@ p.story{ /*General values, other values specific to textbox under id below*/
 #gungstol, #pendel, #fish{
   z-index: 20;
   position: absolute;
-
 }
 
 @media screen and (max-width: 640px){
@@ -63,6 +62,10 @@ p.story{ /*General values, other values specific to textbox under id below*/
 @media screen and (max-width: 1920px) and (min-width: 1920px){
   div.page .pageimg{
     width: 80%;
+  }
+  /*Coverpage*/
+  #page0 img{
+    width: 40%;
   }
   div.page#page0 #authors{
     top: 4%;
