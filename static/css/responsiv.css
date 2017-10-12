@@ -10,6 +10,7 @@ z-index:10 for book images, 20 for animated/static elements, 30 for textboxes
 /*body{overflow: hidden;}*/
 /*All book pages*/
 div.page{
+  position: relative;
   background-color: #de4243;
   height: 100vh;
 }
@@ -34,25 +35,9 @@ p.story{ /*General values, other values specific to textbox under id below*/
 /*Animated elements*/
 /*Page2 livingroom*/
 #gungstol, #pendel, #fish{
-  display: inline;
   z-index: 20;
   position: absolute;
-}
-div > #gungstol{
-  width: 15%;
-  left: 31%;
-  top: 26%;
-}
-div > #pendel{
-  width: 0.9%;
-  left: 82.2%;
-  top: 45.2%;
-}
-/*Page6 upper stairs*/
-div > #fish{
-  width: 3.7%;
-  left: 77%;
-  top: 66.5%;
+
 }
 
 @media screen and (max-width: 640px){
@@ -89,6 +74,23 @@ div > #fish{
     font-size: 20px;
     border-radius: 10px;
     width: 600px;
+  }
+  /*Animated elements*/
+  div > #gungstol{
+    width: 15%;
+    left: 31%;
+    top: 26%;
+  }
+  div > #pendel{
+    width: 0.9%;
+    left: 82.2%;
+    top: 45.2%;
+  }
+  /*Page6 upper stairs*/
+  div > #fish{
+    width: 3.7%;
+    left: 77%;
+    top: 66.5%;
   }
 }
 
