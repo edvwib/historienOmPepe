@@ -1,48 +1,3 @@
-/*
-z-index: 10 for book images, 20 for animated/static elements,
-         30 for textboxes
-
-
-*/
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-/*body{overflow: hidden;}*/
-
-/*All book pages*/
-div.page{
-  height: 100vh;
-  background-color: #de4243;
-}
-/*All book images*/
-div.page .pageimg{
-  z-index: 10;
-  display: block; /*Removes white border between images*/
-  width: 80%;
-  margin: auto;
-}
-
-/*Coverpage*/
-div.page#page0 #authors{
-  position: absolute;
-  top: 4%;
-  left: 36%;
-}
-
-/*Textboxes*/
-p.story{ /*General values, other values specific to textbox under id below*/
-  position: absolute;
-  z-index: 30;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-size: 20px;
-  border-radius: 10px;
-  width: 600px;
-}
 #p1{
   left: 52.5%;
   top: 76%;
@@ -110,29 +65,4 @@ p.story{ /*General values, other values specific to textbox under id below*/
   left: 53.5%;
   top: 3%;
   width: 640px;
-}
-
-
-/*Animated elements*/
-/*Page2 livingroom*/
-#gungstol, #pendel, #fish{
-  display: inline;
-  z-index: 20;
-  position: absolute;
-}
-div > #gungstol{
-  width: 15%;
-  left: 31%;
-  top: 26%;
-}
-div > #pendel{
-  width: 0.9%;
-  left: 82.2%;
-  top: 45.2%;
-}
-/*Page6 upper stairs*/
-div > #fish{
-  width: 3.7%;
-  left: 77%;
-  top: 66.5%;
 }
