@@ -5,7 +5,7 @@ z-index:10 for book images, 20 for animated/static elements, 30 for textboxes
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Comic Sans MS', sans-serif;
 }
 /*body{overflow: hidden;}*/
 /*All book pages*/
@@ -71,7 +71,7 @@ p.story{ /*General values, other values specific to textbox under id below*/
   /*Textboxes*/
   p.story{ /*General values, other values specific to textbox under id below*/
     padding: 10px;
-    font-size: 20px;
+    font-size: 1.16em;
     border-radius: 10px;
     width: 600px;
   }
