@@ -43,12 +43,13 @@ $(document).ready(function(){
     var delta = event.originalEvent.wheelDelta;
     d = new Date();
     if (d.getTime() >= time+2000) {//Check if 2s passed since last scroll
-      if (delta > 0) { //Scroll up
+      if (delta > 0 && currentPage != 0) { //Scroll up
         scrollUp(2000);
-      }else if(delta < 0){ //Scroll down
+       time = d.getTime();
+ }else if(delta < 0 && currentPage != 13){ //Scroll down
         scrollDown(2000);
+       time = d.getTime();
       }
-      time = d.getTime();
     }
   });
 
