@@ -1,0 +1,43 @@
+/*
+z-index:10 for book images, 20 for animated/static elements, 30 for textboxes
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+#alert{
+  display: none;
+}
+/*body{overflow: hidden;}*/
+/*All book pages*/
+div.page{
+  position: relative;
+  background-color: #de4243;
+  height: 100vh;
+}
+/*All book images*/
+div.page .pageimg{
+  z-index: 10;
+  display: block; /*Removes white border between images*/
+  margin: auto;
+}
+/*Coverpage*/
+div.page#page0 #authors{
+  position: absolute;
+}
+/*Textboxes*/
+p.story{ /*General values, other values specific to textbox under id below*/
+  position: absolute;
+  z-index: 30;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/*Animated elements*/
+/*Page2 livingroom*/
+#gungstol, #pendel, #fish{
+  z-index: 20;
+  position: absolute;
+}
