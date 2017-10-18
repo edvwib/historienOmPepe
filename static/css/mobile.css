@@ -1,0 +1,75 @@
+main#wrapper{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+}
+
+#authors{
+  font-size: 13px;
+  position: absolute;
+  top: 12%;
+  left: 33%;
+}
+#page0 img{
+  height: 80vh;
+  width: 42vw;
+  position: absolute;
+  left: 45%;
+}
+
+
+.page{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.pageimg{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 67vw;
+  height: 80vh;
+  position: absolute;
+  left: 0;
+  top: 35px;
+}
+
+/*Animated elements*/
+div > #gungstol{
+  width: 11vw;
+  left: 19%;
+  top: 32%;
+}
+div > #pendel{
+  width: 0.75vw;
+  left: 60.4%;
+  top: 43.5%;
+}
+div > #fish{
+  width: 3.3%;
+  left: 55.5%;
+  top: 59%;
+  animation-name: fishMobile;
+}
+
+/*Textboxes*/
+p.story{
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+  height: 80vh;
+  top: 35px;
+  margin-left: 2px;
+}
+#p12_1{
+  height: 35vh;
+}
+#p12_2{
+  height: 35vh;
+  top: 221px;
+}
+#p13_1{
+  height: 12vh;
+}
+#p13_2{
+  height: 64vh;
+  top: 101px;
+}
