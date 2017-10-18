@@ -39,9 +39,10 @@ p.story{ /*General values, other values specific to textbox under id below*/
   position: absolute;
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-device-width: 375px), (max-width: 375px){
   body {
     position: relative;
+    background-color: #de4243;
     width: 37012px;
   }
 
@@ -55,11 +56,7 @@ p.story{ /*General values, other values specific to textbox under id below*/
   }
 }
 
-@media screen and (max-width: 768px){
-
-}
-
-@media screen and (max-width: 1920px) and (min-width: 1920px){
+@media only screen and (max-width: 1920px) and (min-width: 1920px){
   div.page .pageimg{
     width: 80%;
   }
@@ -167,29 +164,15 @@ p.story{ /*General values, other values specific to textbox under id below*/
 
 }
 
-/*@media only screen and (orientation: portrait) {
-  body {
-    position: relative;
-    width: 37012px;
+@media only screen and (orientation: landscape) and (max-width: 376px){
+  main::before{
+    content: "Please rotate your device to portrait mode.";
+    margin-left: 35%;
   }
-
-  div.page {
-    display: inline-block;
+  body{
+    background-color: #de4243;
   }
-
-  div.page .pageimg{
-    height: 100vh;
-    width: auto;
+  .page{
+    display: none;
   }
 }
-
-
-@media only screen and (orientation: landscape) {
-  div.page{
-    position: relative;
-  }
-  div.page img{
-    display: block;
-    width: 100%;
-  }
-}*/
