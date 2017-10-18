@@ -7,6 +7,9 @@ z-index:10 for book images, 20 for animated/static elements, 30 for textboxes
   box-sizing: border-box;
   font-family: 'Comic Sans MS', sans-serif;
 }
+#alert{
+  display: none;
+}
 /*body{overflow: hidden;}*/
 /*All book pages*/
 div.page{
@@ -164,15 +167,16 @@ p.story{ /*General values, other values specific to textbox under id below*/
 
 }
 
-@media only screen and (orientation: landscape) and (max-width: 376px){
-  main::before{
-    content: "Please rotate your device to portrait mode.";
-    margin-left: 35%;
+@media only screen and (orientation: portrait){
+  #alert{
+    display: inline;
+    font-family: 'Arial', sans-serif;
+    font-size: 7em;
   }
   body{
     background-color: #de4243;
   }
-  .page{
-    display: none;
+  .page, .page > *, .pageimg{
+    display: none!important;
   }
 }
