@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  if(window.innerWidth <= 375 || window.screen.width <= 375) {
+  if(window.innerWidth <= 736 || window.screen.width <= 736) {
     return;
   }else {
     main();
