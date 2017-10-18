@@ -1,7 +1,23 @@
-main#wrapper{
+.page{
   display: none;
 }
+
 #alert{
   display: inline;
+  position: absolute;
+  text-align: center;
+}
 
+#wrapper{
+  background-color: #de4243;
+  height: 100vh;
+}
+#page0{
+  display: inline;
+  width: 100vw;
+}
+#authors{display: none;}
+#page0 > .pageimg{
+  width: 100vw;
+  padding-top: 35%;
 }
