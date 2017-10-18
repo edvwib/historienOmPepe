@@ -1,15 +1,7 @@
 $(document).ready(function(){
-  if(window.innerWidth <= 550) {
-    console.log('a');
-    $(window).resize(function() {
-      if ($(this).width() > 550) {
-        console.log('c');
-        main();
-      }
-    });
+  if(window.innerWidth <= 375 || window.screen.width <= 375) {
     return;
-  } else {
-    console.log('b');
+  }else {
     main();
   }
 
