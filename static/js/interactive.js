@@ -22,26 +22,26 @@ $(document).ready(function(){
     }
 
     $(window).bind('hashchange', function() {//Update currentPage if user manually change URL
-       oldURLLoc = window.location.href.split("#page").pop(); //Get last part of URL
-       currentPage = oldURLLoc;
-     });
+      oldURLLoc = window.location.href.split("#page").pop(); //Get last part of URL
+      currentPage = oldURLLoc;
+    });
 
     //Scrolling with keyboard
-      $(document).keydown(function (evt) {
-        var k = evt.keyCode;
-        d = new Date();
-        if (d.getTime() >= time+2000) {
-          if(k === 40 || k === 83 || k === 34 || k === 32){ //Down arrow key, s, pagedown or spacebar
-            evt.preventDefault();
-            scrollDown(2000);
-          }
-          if(k === 38 || k === 87 || k === 33){ //Up arrow key, w or pageup
-            evt.preventDefault();
-            scrollUp(2000);
-          }
-          time = d.getTime();
+    $(document).keydown(function (evt) {
+      var k = evt.keyCode;
+      d = new Date();
+      if (d.getTime() >= time+2000) {
+        if(k === 40 || k === 83 || k === 34 || k === 32){ //Down arrow key, s, pagedown or spacebar
+          evt.preventDefault();
+          scrollDown(2000);
         }
-      });
+        if(k === 38 || k === 87 || k === 33){ //Up arrow key, w or pageup
+          evt.preventDefault();
+          scrollUp(2000);
+        }
+        time = d.getTime();
+      }
+    });
 
     //Scroll with mousewheel
     $(window).bind('mousewheel', function(event) {
@@ -51,10 +51,10 @@ $(document).ready(function(){
       if (d.getTime() >= time+2000) {//Check if 2s passed since last scroll
         if (delta > 0 && currentPage != 0) { //Scroll up
           scrollUp(2000);
-         time = d.getTime();
-   }else if(delta < 0 && currentPage != 13){ //Scroll down
+          time = d.getTime();
+        }else if(delta < 0 && currentPage != 13){ //Scroll down
           scrollDown(2000);
-         time = d.getTime();
+          time = d.getTime();
         }
       }
     });
