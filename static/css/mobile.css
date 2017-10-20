@@ -46,8 +46,13 @@ div > #pendel{
 div > #fish{
   width: 3.3%;
   left: 55.5%;
-  top: 59%;
+  top: 56%;
   animation-name: fishMobile;
+}
+@-moz-document url-prefix() {
+  div > #fish {
+     top: 58%;
+  }
 }
 
 /*Textboxes*/
