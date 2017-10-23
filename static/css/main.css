@@ -12,7 +12,6 @@ z-index:10 for book images, 20 for animated/static elements, 30 for textboxes
 }
 body{
   background-color: #de4243;
-  overflow: hidden;
 }
 /*All book pages*/
 div.page{
