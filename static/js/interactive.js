@@ -43,23 +43,25 @@ $(document).ready(function(){
       }
     });
 
-    //Scroll with mousewheel
-    $(window).bind('mousewheel', function(event) {
+    $(window).on('wheel', function(event){
       event.preventDefault();
-      var delta = event.originalEvent.wheelDelta;
+      var delta = event.originalEvent.deltaY;
+      scroll(delta);
+    });
+
+    function scroll(delta){
+      console.log(delta);
       d = new Date();
       if (d.getTime() >= time+2000) {//Check if 2s passed since last scroll
-        if (delta > 0 && currentPage != 0) { //Scroll up
+        if (delta < 0 && currentPage != 0) { //Scroll up
           scrollUp(2000);
           time = d.getTime();
-        }else if(delta < 0 && currentPage != 13){ //Scroll down
+        }else if(delta > 0 && currentPage != 13){ //Scroll down
           scrollDown(2000);
           time = d.getTime();
         }
       }
-    });
-
-
+    }
     function scrollUp(speed){
       currentPage--; //Update current location
       if (currentPage < 0) { //If first page = do no scroll up
