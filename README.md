@@ -1,5 +1,5 @@
 # historienOmPepe
-Historien om någon remake but with pepe
+Historien om någon omgjord med with pepe
 
 Krav på uppgiften:
 Bild, text och färger ska tillsammans driva historien framåt
